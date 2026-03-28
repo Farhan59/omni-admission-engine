@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .glass {
+    @apply bg-zinc-900/40 backdrop-blur-2xl rounded-xl border border-white/5 shadow-2xl transition-all duration-300;
+  }
+  .glass-hover {
+    @apply hover:bg-zinc-800/60 hover:border-white/10;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: #09090b;
+  color: #fafafa;
+  min-height: 100vh;
+  background-image: radial-gradient(circle at 50% -20%, #27272a 0%, #09090b 60%);
+  background-attachment: fixed;
+}
